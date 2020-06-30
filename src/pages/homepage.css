@@ -1,0 +1,63 @@
+section{
+    padding-bottom: 100px;
+}
+.kv{
+    width: 100%;
+    height: 800px;
+    background-color: #333;
+    color: #fff;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+.kvbg1{
+    background-image: url('https://moshiv3blob.azureedge.net/images/v3/campaignpage/campaign8853f7daade9428fb401c51d6e249102..jpg')
+}
+
+.kvbg2{
+    background-image: url('https://moshiv3blob.azureedge.net/images/v3/campaignpage/campaign4787186f2b4e42df99042ea93aee942d..jpg')
+}
+
+.kvbg3{
+    background-image: url('https://moshiv3blob.azureedge.net/images/v3/campaignpage/campaign6699f0519e4e4a01b0abd55438898e11..jpg')
+}
+
+.kv h1,.kv h2{
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.kv .center{
+    width: 80%;
+    min-height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: right;
+    margin: 0 auto;
+}
+
+.kv .center.a-left{
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.kv .center.a-center{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.kv .box{
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+.kv .btn{
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+.hoverImg{
+    position: relative;
+}
+
+.hoverImg img{
+    width: 100%;
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+.hoverImg .normal{
+    position: relative;
+    z-index: 1;
+}
+
+.hoverImg:hover .hover{
+    opacity: 1;
+
+}
+
+.hoverImg .hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    z-index: 20;
+}

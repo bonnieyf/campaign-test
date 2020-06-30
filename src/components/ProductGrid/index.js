@@ -1,78 +1,33 @@
-import React, { useContext } from 'react'
-import { useStaticQuery, graphql, Link } from 'gatsby'
-
-import StoreContext from '~/context/StoreContext'
+import React from 'react'
+import { Link } from 'gatsby'
 import {
   Grid,
   Product,
   Title,
   PriceTag
 } from './styles'
-import { Img } from '~/utils/styles'
+import HoverImg from '~/components/ProductGrid/styles.css'
+import datas from '~/components/ProductGrid/products.json'
+
 
 const ProductGrid = () => {
-  const { store: {checkout} } = useContext(StoreContext)
-  const { allShopifyProduct } = useStaticQuery(
-    graphql`
-      query {
-        allShopifyProduct(
-          sort: {
-            fields: [createdAt]
-            order: DESC
-          }
-        ) {
-          edges {
-            node {
-              id
-              title
-              handle
-              createdAt
-              images {
-                id
-                originalSrc
-                localFile {
-                  childImageSharp {
-                    fluid(maxWidth: 910) {
-                      ...GatsbyImageSharpFluid_withWebp_tracedSVG
-                    }
-                  }
-                }
-              }
-              variants {
-                price
-              }
-            }
-          }
+    return (
+      <Grid>
+        {
+          datas.map((data)=>(
+            <Product key={data.id}>
+              <Link to={`/product/${data.id}`} className="hoverImg">
+                <img src={data.img1} className="normal"/>
+                <img src={data.img2} className="hover"/>
+              </Link>
+              <Title>{ data.name }</Title>
+              <PriceTag>{data.price}</PriceTag>
+            </Product>
+          ))
         }
-      }
-    `
-  )
-
-  const getPrice = price => Intl.NumberFormat(undefined, {
-    currency: checkout.currencyCode ? checkout.currencyCode : 'EUR',
-    minimumFractionDigits: 2,
-    style: 'currency',
-  }).format(parseFloat(price ? price : 0))
-
-  return (
-    <Grid>
-      {allShopifyProduct.edges
-        ? allShopifyProduct.edges.map(({ node: { id, handle, title, images: [firstImage], variants: [firstVariant] } }) => (
-          <Product key={id} >
-            <Link to={`/product/${handle}/`}>
-              {firstImage && firstImage.localFile &&
-                (<Img
-                  fluid={firstImage.localFile.childImageSharp.fluid}
-                  alt={handle}
-                />)}
-            </Link>
-            <Title>{title}</Title>
-            <PriceTag>{getPrice(firstVariant.price)}</PriceTag>
-          </Product>
-        ))
-        : <p>No Products found!</p>}
-    </Grid>
-  )
+        
+      </Grid>
+    );
 }
 
 export default ProductGrid

@@ -4,8 +4,7 @@ import { Link } from 'gatsby'
 import { breakpoints } from '../../utils/styles'
 
 export const Wrapper = styled.div`
-  background: rebeccapurple;
-  margin-bottom: 1.45rem;
+  background: #444;
 `
 
 export const Container = styled.div`
@@ -14,7 +13,7 @@ export const Container = styled.div`
   align-items: baseline;
   padding: 1.45rem;
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1400px;
 `
 
 export const MenuLink = styled(Link)`

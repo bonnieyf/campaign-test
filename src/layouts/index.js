@@ -8,10 +8,25 @@ import ContextProvider from '~/provider/ContextProvider'
 import { GlobalStyle } from '~/utils/styles'
 import Navigation from '~/components/Navigation'
 
-const Wrapper = styled.div`
+
+export const Container = styled.div`
   margin: 0 auto;
-  max-width: 960px;
-  padding: 0px 1.0875rem 1.45rem;
+  max-width: 1400px;
+`
+
+const Wrapper = styled.div`
+  padding: 0;
+`
+
+const Footer = styled.div`
+  background: #444;
+  padding: 2rem;
+  color: #fff;
+  margin-top: 2rem;
+
+  a{
+    color: #fff;
+  }
 `
 
 const Layout = ({ children }) => {
@@ -33,12 +48,14 @@ const Layout = ({ children }) => {
             <Navigation siteTitle={data.site.siteMetadata.title} />
             <Wrapper>
               {children}
-              <footer>
-                © {new Date().getFullYear()}, Built with
-                {` `}
-                <a href="https://www.gatsbyjs.org">Gatsby</a>
-              </footer>
             </Wrapper>
+            <Footer>
+                <Container>
+                  © {new Date().getFullYear()}, Built with
+                  {` `}
+                  <a href="https://www.gatsbyjs.org">Gatsby</a>
+                </Container>
+            </Footer>
           </>
         )}
       />

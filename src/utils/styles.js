@@ -40,7 +40,7 @@ export const Img = styled(Image)`
 
 export const Container = styled.div`
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 1400px;
 `
 
 export const TwoColumnGrid = styled.div`

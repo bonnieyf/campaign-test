@@ -6,8 +6,8 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Campaign page`,
-    description: `this is a sample page`,
+    title: `Moshi certified designed for surface products`,
+    description: `Moshi's range of stylish and innovative Designed for Surface-certified products to compliment the full suite of Surface devices.`,
     author: ``,
   },
   plugins: [

@@ -1,30 +1,37 @@
-section{
-    padding-bottom: 100px;
-}
 .kv{
     width: 100%;
-    height: 800px;
+    height: 680px;
     background-color: #333;
     color: #fff;
     background-size: cover;
+    background-position: center;
     margin-bottom: 40px;
 }
 
 .kvbg1{
-    background-image: url('https://moshiv3blob.azureedge.net/images/v3/campaignpage/campaign8853f7daade9428fb401c51d6e249102..jpg')
+    background-image: url('http://download.moshi.com/Images/upload/Umbra_Surface_Pro_2017/1772/lifestyle/Umbra_for_Surface_Pro_LS_1.jpg')
 }
 
-.kvbg2{
-    background-image: url('https://moshiv3blob.azureedge.net/images/v3/campaignpage/campaign4787186f2b4e42df99042ea93aee942d..jpg')
+.kv.kvbg1 .center{
+    justify-content: flex-start;
+}
+.kv.kvbg1 .center .box{
+    max-width: 600px;
+    text-align: left;
 }
 
-.kvbg3{
-    background-image: url('https://moshiv3blob.azureedge.net/images/v3/campaignpage/campaign6699f0519e4e4a01b0abd55438898e11..jpg')
+
+.kv h2{
+    font-size: 60px;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 30px;
+    text-shadow: 0 0 3px rgba(#000,.5);
 }
 
-.kv h1,.kv h2{
-    font-size: 40px;
-    line-height: 1.5;
+.kv h3{
+    font-size: 32px;
+    line-height: 1.2;
 }
 
 .kv .center{
@@ -54,10 +61,171 @@ section{
     line-height: 1.5;
 }
 
-.kv .btn{
-    border: 1px solid #fff;
-    color: #fff;
-    font-size: 15px;
-    line-height: 50px;
+
+.textSection{
+    padding: 30px 0;
+}
+
+.textSection .center{
+    max-width: 900px;
+    margin: 0 auto;
     text-align: center;
+}
+
+.textSection h2{
+    font-size: 54px;
+    line-height: 1.2;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.textSection p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.productImg{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+}
+
+.center-ml{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hightlight{
+    background-color: #444;
+    color: #fff;
+    padding: 30px;
+}
+
+.hightlight h2{
+    font-size: 45px;
+    margin-top: 0;
+    text-align: center;
+}
+
+.hightlight p{
+    font-size: 16px;
+}
+
+.flexbox{
+    display: flex;
+    align-items: center;
+}
+
+.flexbox div{
+    flex: 50%;
+}
+
+.flexbox div:nth-child(1){
+    max-width: 400px;
+}
+.quote{
+    display: block;
+    position: relative;
+    padding: 20px 50px;
+    margin: 0;
+    margin-bottom: 100px;
+    
+}
+
+.quote p {
+    font-size: 26px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.quote span{
+    display: block;
+    margin-top: 80px;
+    text-align: center;
+    font-style: italic;
+    text-align: center;
+}
+.quote:before{
+    content: "“";
+    position: absolute;
+    top: -60px;
+    left: 0;
+    font-size: 60px;
+}
+
+.quote:after{
+    content: "“";
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    font-size: 60px;
+    transform: rotate(180deg);
+}
+
+.products{
+    padding: 100px 0;
+    background-color: #e0e0e0;
+}
+
+.product-part{
+    padding: 100px 0;
+}
+
+.products h2{
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 54px;
+}
+
+.products .center{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 54px;
+    line-height: 1;
+}
+
+.product-part .center{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.product-part h2{
+    font-size: 54px;
+    margin-top: 0;
+}
+
+.product-part p{
+    font-style: 18px;
+    line-height: 1.5;
+}
+
+section.gray-bg{
+    background-color: #e1e1e1;
+}
+
+.form{
+    padding: 100px 0;
+}
+
+.form p{
+    font-size: 30px;
+    line-height: 1.5;
+    margin: 0;
+}
+.form .center{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.form h2{
+    font-size: 54px;
+    margin-top: 0;
 }

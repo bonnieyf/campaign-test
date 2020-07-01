@@ -4,14 +4,13 @@ import { Link } from 'gatsby'
 import { breakpoints } from '../../utils/styles'
 
 export const Wrapper = styled.div`
-  background: #444;
+  background: #fff;
+  border-bottom: 1px solid #e1e1e1
 `
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 1.45rem;
+  justify-content: center;
   margin: 0 auto;
   max-width: 1400px;
 `

@@ -9,6 +9,8 @@ import {
 	Wrapper
 } from './styles'
 
+import headerStyle from './header.css'
+
 // const useQuantity = () => {
 // 	const { store: {checkout} } = useContext(StoreContext)
 // 	const items = checkout ? checkout.lineItems : []
@@ -18,12 +20,11 @@ import {
 
 const Navigation = ({ siteTitle }) => {
 //   const [hasItems, quantity] = useQuantity()
-
-	return(
+	return(	
 		<Wrapper>
 			<Container>
 				<MenuLink to='/'>
-					{siteTitle}
+				   <img className="logo" alt="Moshi Logo link to home" src="https://cdnblob.moshi.com/images/main/moshilogo_black.svg"/>
 				</MenuLink>
 			</Container>
 		</Wrapper>

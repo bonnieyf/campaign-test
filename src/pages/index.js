@@ -117,6 +117,137 @@ const IndexPage = () => {
             <p>Want to know more about how Moshi DFS solutions can help your business? Complete the form below and one of our salespeople will get in contact with you to discuss your requirements further.</p>
           </div>
           <Container>
+              <form>
+                <div className="flex">
+                  <div className="flex-item full">
+                    <div className="flex">
+                      <div className="flex-row">
+                          <div>First Name</div>
+                          <div><input type="text" /></div>
+                      </div>
+                      <div className="flex-row">
+                          <div>Last Name</div>
+                          <div><input type="text" /></div>
+                      </div>
+                    </div>
+                    <div className="flex">
+                      <div className="flex-row">
+                        <div>Email</div>
+                        <div><input type="email" /></div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div className="flex-item">
+                    <div className="flex-row">
+                        <div>Company</div>
+                        <div><input type="text" /></div>
+                    </div>
+                    <div className="flex-row">
+                        <div>Industry</div>
+                        <div>
+                          <select>
+                            <option value=''>Education</option>
+                            <option value=''>Government</option>
+                            <option value=''>OEM/Manufacturer</option>
+                            <option value=''>Press</option>
+                            <option value=''>Corporate</option>
+                            <option value=''>Other</option>
+                          </select>
+                        </div>
+                    </div>
+                  </div>
+                  <div className="flex-item">
+                    <div className="flex-row">
+                        <div>Country/Region</div>
+                        <div><input type="text" /></div>
+                    </div>
+                  </div>
+                </div>
+                <br/>
+
+                <div className="flex">
+                  <div className="flex-item full">
+                      <div className="flex-row">
+                          <div><b>Which category are you inquiring about (select all that apply)</b></div>
+                          <div>
+                            <label><input type="checkbox"></input><span>Bags and Cases</span></label>
+                            <label><input type="checkbox"></input><span>Screen Protection</span></label>
+                            <label><input type="checkbox"></input><span>Hubs and Charging</span></label>
+                            <label><input type="checkbox"></input><span>Cables and Adapters</span></label>
+                            <label><input type="checkbox"></input><span>Audio</span></label>
+                          </div>
+                      </div>
+                  </div>
+                  <div className="flex-item full">
+                      <div className="flex-row">
+                          <div><h3>Details of your inquiry</h3></div>
+                          <div>
+                            <textarea></textarea>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              
+                <button className="submit" type="submit">Submit</button>
+              </form>
+          </Container>
+        </section>
+
+
+        <section className="about">
+          <Container>
+            <h2>About Moshi</h2>
+            <p>Founded in California in 2005, Moshi is a purveyor of electronics and accessories for modern life. Our ethos of creating fewer, better products guides our in-house design teams in selecting the finest materials and components to ensure our goods exceed both quality and performance expectations. 
+Renowned for a clean and minimalist design aesthetic, along with our commitment to innovation and premium quality, all Moshi products are backed by a 10-year worldwide warranty - an industry promoting a quality-over-quantity mindset across the globe.</p>
+
+            <div className="box white">
+              <h3>The Moshi Advantage</h3>
+              <div className="icons">
+                <div className="icon">
+                  <i className="demo-icon">150x150</i>
+                  <h3>10-year global warranty</h3>
+                  <span>Extend the equipment replacement cycle no matter where in the world employees are located</span>
+                </div>
+                <div className="icon">
+                  <i className="demo-icon">150x150</i>
+                  <h3>Quality design and materials</h3>
+                  <span>Thoughtfully designed using high quality, eco-friendly materials to enhance form, function, and longevity</span>
+                </div>
+                <div className="icon">
+                  <i className="demo-icon">150x150</i>
+                  <h3>Wide-ranging compatibility</h3>
+                  <span>We work with leading standards organizations to ensure device compatibility, conformity, and performance</span>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="box white">
+              <h3>Members of</h3>
+              <div className="icons small">
+                <div className="icon">
+                  <i className="demo-icon">150x150</i>
+                  <h3>USB Implementers Forum</h3>
+                </div>
+                <div className="icon">
+                  <i className="demo-icon">150x150</i>
+                  <h3>VESA (DisplayPort)</h3>
+                </div>
+                <div className="icon">
+                  <i className="demo-icon">150x150</i>
+                  <h3>Wireless Power Consortium (Qi)</h3>
+                </div>
+                <div className="icon">
+                  <i className="demo-icon">150x150</i>
+                  <h3>Bluetooth SIG</h3>
+                </div>
+                <div className="icon">
+                  <i className="demo-icon">150x150</i>
+                  <h3>High Definition Multimedia Interface (HDMI)</h3>
+                </div>
+              </div>
+            </div>
           </Container>
         </section>
     </div>
